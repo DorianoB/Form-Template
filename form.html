@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+<link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+<h1 id="title">FORM TEMPLATE</h1>
+<p id="description">A little "form" template for beginners</p>
+<form id="survey-form">
+  <div id="enter"><label id="name-label" >Name<input id="name" required placeholder="enter your name"></label>
+  <label id="email-label">Email<input id="email" type="email" required placeholder="enter your email"></label>
+  <label id="number-label">Age<input id="number" type="number" min="16" max="120" placeholder="age"></label></div>
+
+  <p id="jobs">What best describes you?</p>
+
+    <select id="dropdown">
+    <option disabled selected value>Select current status</option>
+    <option value="student">Student</option>
+    <option value="learner">Full time learner</option>
+    <option value="full-time">Full time job</option>
+    <option value="part-time">Part time job</option>
+    </select>
+
+    <p>Which industry would you like to work in?</p>
+    
+    <div id="industry"><label><input type="radio" name="user-recommend" value="events">
+    Events and Marketing</label>
+    <label><input type="radio" name="user-recommend" value="construction">
+    Construction </label>
+    <label><input type="radio" name="user-recommend" value="it">
+IT</label>
+ <label><input type="radio" name="user-recommend" value="real-estate">
+Real Estate</label></div>
+
+<p>Which skills do you have in your pocket?<span class="skills">(Check all that apply)</span></p>
+
+<div id="skillset">
+<label><input type="checkbox" value="communication">Communication</label>
+<label><input type="checkbox" value="creativity">Creativity</label>
+<label><input type="checkbox" value="project-management">Project Management</label>
+<label><input type="checkbox" value="time">Time Management</label>
+<label><input type="checkbox" value="leadership">Leadership</label></div>
+
+<p>What else would you like to say?</p>
+<textarea placeholder="Tell us!"></textarea>
+<button id="submit">Click Me</button>
+  </body>
+</html>
